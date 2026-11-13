@@ -40,10 +40,10 @@ public:
     CacheState getCacheState(int32_t levelID, Quality quality = Quality::High);
 
     static std::string getThumbnailUrl(int32_t levelID, Quality quality = Quality::High);
-    static std::filesystem::path getThumbnailPath(int32_t levelID, Quality quality = Quality::High);
-    static std::filesystem::path getThumbnailPath(std::string_view api, int32_t levelID, Quality quality);
+    static asp::fs::Path getThumbnailPath(int32_t levelID, Quality quality = Quality::High);
+    static asp::fs::Path getThumbnailPath(std::string_view api, int32_t levelID, Quality quality);
 
-    static std::filesystem::path const& getCacheDirectory();
+    static asp::fs::Path const& getCacheDirectory();
 
     void cleanupFileCacheEntry(int32_t levelID, Quality quality);
 

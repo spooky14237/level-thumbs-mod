@@ -88,7 +88,7 @@ public:
     static std::string getToken();
 
     LoginFuture login();
-    UploadFuture uploadThumbnail(std::filesystem::path filename, int levelID, std::string note, geode::Function<void(geode::ZStringView)> onProgress = nullptr);
+    UploadFuture uploadThumbnail(asp::fs::Path filename, int levelID, std::string note, geode::Function<void(geode::ZStringView)> onProgress = nullptr);
     LinkFuture linkAccount(std::string linkSecret);
 
     void initialSync();

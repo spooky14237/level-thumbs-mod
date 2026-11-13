@@ -36,9 +36,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Apply asp::fs migration patches
-        run: python3 scripts/apply_patches.py
-
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:

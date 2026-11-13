@@ -1,12 +1,12 @@
 {
-    "geode": "5.7.1",
+    "geode": "6.0.0-alpha.1",
     "gd": {
-        "win": "2.2081",
-        "android": "2.2081",
-        "mac": "2.2081",
-        "ios": "2.2081"
+        "win": "2.2091",
+        "android": "2.2091",
+        "mac": "2.2091",
+        "ios": "2.2091"
     },
-    "version": "v2.6.1",
+    "version": "v2.7.0-alpha.1",
     "id": "cdc.level_thumbnails",
     "name": "Level Thumbnails",
     "developer": "cdc",
@@ -17,7 +17,9 @@
     },
     "description": "Adds thumbnails to levels in search.",
     "resources": {
-        "sprites": [ "resources/noThumb.png" ],
+        "sprites": [
+            "resources/noThumb.png"
+        ],
         "spritesheets": {
             "LT_Sheet": [
                 "resources/LT_Badge_Owner.png",
@@ -126,7 +128,11 @@
             "name": "Image Quality",
             "description": "The quality of the thumbnail used for the background (setting this to low uses the already downloaded thumbnail, having blur enabled forces this to low).",
             "type": "string",
-            "one-of": ["Low", "Medium", "High"],
+            "one-of": [
+                "Low",
+                "Medium",
+                "High"
+            ],
             "default": "High",
             "enable-if": "level-bg && !level-bg-blur"
         },
@@ -167,7 +173,7 @@
         }
     },
     "dependencies": {
-        "geode.node-ids": ">=1.7.1",
+        "geode.node-ids": ">=1.23.0",
         "prevter.imageplus": ">=1.0.0",
         "eclipse.eclipse-menu": {
             "version": ">=1.9.2",
